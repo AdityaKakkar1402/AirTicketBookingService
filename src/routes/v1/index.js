@@ -1,5 +1,5 @@
 const express = require("express");
-
+const { BookingController } = require("../../controllers/index");
 // const { FlightMiddlewares } = require("../../middlewares/index");
 
 // const CityController = require("../../controllers/city-controller");
@@ -20,6 +20,6 @@ const router = express.Router();
 // );
 // router.get("/flights", FlightController.getAll);
 
-// router.post("/airports", AirportController.create);
+router.post("/bookings", BookingController.create);
 
 module.exports = router;
